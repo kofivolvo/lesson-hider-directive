@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html ng-app="hiderApp">
+
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+
+
+
+
+  <body ng-controller="mainCtrl">
+
+
+
+    <h1>{{oh}}</h1>
+
+    <ul style="list-style-type:none;padding-left:442px;margin-top: 210px;font-size: -webkit-xxx-large;">
+
+
+
+      <time-directive lesson="lesson" day-alert="announceDay(lesson, day)" ng-repeat="lesson in things">
+
+      </time-directive>
+
+
+
+
+    </ul>
+  </body>
+
+  <ui-view></ui-view>
+
+  <!-- Script -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/timeDirective.js"></script>
+  <script src="js/services.js"></script>
+  <script src="js/mainCtrl.js"></script>
+
+
+
+  <!-- Script -->
+
+</html>
